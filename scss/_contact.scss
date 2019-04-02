@@ -1,0 +1,21 @@
+.contact {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  text-align: center;
+
+  &__text {
+    margin-top: 1rem;
+  }
+
+  &__email {
+    margin-top: 1rem;
+  }
+
+  &__phone {
+    margin-top: 0.5rem;
+  }
+
+  & p span {
+    font-weight: 600;
+  }
+}

@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+}
+
+// Media Query Mixins
+
+// small screens with screen widths of 600px or less
+@mixin verySmall {
+  @media screen and (max-width: 599.98px) {
+    @content;
+  }
+}
+
+// Small Screens larger than 600px
+@mixin small {
+  @media screen and (min-width: 600px) {
+    @content;
+  }
+}
+// Medium Screens Larger than 768px
+@mixin medium {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+// Large Screens larger than 1200px
+@mixin large {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
+
+// Large Screens larger than 1366px
+@mixin veryLarge {
+  @media screen and (min-width: 1366px) {
+    @content;
+  }
+}
